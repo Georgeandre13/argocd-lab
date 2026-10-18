@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-demo
-        image: ghcr.io/georgeandre13/flask-demo:869b798d80910fd27243f0513c24fa28632fa675
+        image: ghcr.io/georgeandre13/flask-demo:9e59b381f38a57af521712c9c9a0b33e92186e39
         ports:
         - containerPort: 5000
         readinessProbe:
