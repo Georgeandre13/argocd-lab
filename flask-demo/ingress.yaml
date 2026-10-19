@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: flask-demo
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: flask-test.192.168.1.88.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: flask-demo
+            port:
+              number: 80
