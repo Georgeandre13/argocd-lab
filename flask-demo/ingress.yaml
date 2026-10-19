@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-  - host: flask-test.192.168.1.88.nip.io
+  - host: flask-prod.192.168.1.88.nip.io
     http:
       paths:
       - path: /
